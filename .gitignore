@@ -1,8 +1,8 @@
 # Directories
 .vs/
 bin/
-obj/
+bin-obj/
 
 # Files
-Z_CMD.bat
+..cmd.bat
 *.user

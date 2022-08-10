@@ -14,8 +14,7 @@ namespace GameEngine
 	{
 		while (true)
 		{
-			static unsigned long n = -1;
-			printf("%lu\n", ++n);
+			//!
 		}
 	}
 }
