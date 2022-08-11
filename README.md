@@ -1,2 +1,2 @@
 # GameEngine
-OpenGL Game Engine
+C++ OpenGL Game Engine
