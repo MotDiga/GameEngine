@@ -1,8 +1,8 @@
 #pragma once
-#include "Core.h"
-#include "Log/Log.h"
-#include "Events/Event.h"
-#include "Events/ApplicationEvent.h"
+#include <GameEngine/Core.h>
+#include <GameEngine/Log/Log.h>
+#include <GameEngine/Events/Event.h>
+#include <GameEngine/Events/ApplicationEvent.h>
 
 namespace GameEngine
 {

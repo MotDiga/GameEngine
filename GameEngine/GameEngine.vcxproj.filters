@@ -7,6 +7,9 @@
     <Filter Include="GameEngine\Events">
       <UniqueIdentifier>{193A4684-8550-441A-CEC7-CF3B3A1D15A2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameEngine\Log">
+      <UniqueIdentifier>{264AB2D0-1218-A6D6-FBAB-16FDE718823B}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\GameEngine.h" />
@@ -32,15 +35,17 @@
       <Filter>GameEngine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\GameEngine\Log\Log.h">
-      <Filter>GameEngine</Filter>
+      <Filter>GameEngine\Log</Filter>
     </ClInclude>
+    <ClInclude Include="src\PreCompiledHeaders.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\GameEngine\Application.cpp">
       <Filter>GameEngine</Filter>
     </ClCompile>
     <ClCompile Include="src\GameEngine\Log\Log.cpp">
-      <Filter>GameEngine</Filter>
+      <Filter>GameEngine\Log</Filter>
     </ClCompile>
+    <ClCompile Include="src\PreCompiledHeaders.cpp" />
   </ItemGroup>
 </Project>

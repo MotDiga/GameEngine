@@ -1,9 +1,9 @@
 #pragma once
-#include "Core.h"
+#include <GameEngine/Core.h>
 
 #ifdef _PLATFORM_WINDOWS
 
-//extern GameEngine::Application* GameEngine::CreateApplication();
+extern GameEngine::Application* GameEngine::CreateApplication();
 
 int main(int argc, char* argv[])
 {

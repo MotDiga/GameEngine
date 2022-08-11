@@ -1,7 +1,5 @@
 #pragma once
-#include "GameEngine/Core.h"
-#include <string>
-#include <functional>
+#include <GameEngine/Core.h>
 
 namespace GameEngine
 {

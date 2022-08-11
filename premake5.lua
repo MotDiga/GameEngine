@@ -17,6 +17,9 @@ project "GameEngine"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-obj/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "PreCompiledHeaders.h"
+	pchsource "GameEngine/src/PreCompiledHeaders.cpp"
+
 	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp",

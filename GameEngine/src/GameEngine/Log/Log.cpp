@@ -1,3 +1,4 @@
+#include <PreCompiledHeaders.h>
 #include "Log.h"
 
 namespace GameEngine

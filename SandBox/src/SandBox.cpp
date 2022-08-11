@@ -1,3 +1,4 @@
+#include <PreCompiledHeaders.h>
 #include <GameEngine.h>
 
 class SandBox : public GameEngine::Application
