@@ -2,11 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-typedef char* string_t;
-typedef unsigned char* ustring_t;
 
-#ifdef GE_PLATFORM_WINDOWS
-	#ifdef GE_BUILD_DLL
+#ifdef _PLATFORM_WINDOWS
+	#ifdef _BUILD_DLL
 		#define GE_API __declspec(dllexport)
 	#else
 		#define GE_API __declspec(dllimport)
@@ -14,3 +12,5 @@ typedef unsigned char* ustring_t;
 #else
 	#error 
 #endif // GE_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

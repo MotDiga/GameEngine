@@ -34,8 +34,8 @@ project "GameEngine"
 		systemversion "latest"
 
 		defines {
-			"GE_PLATFORM_WINDOWS",
-			"GE_BUILD_DLL"
+			"_PLATFORM_WINDOWS",
+			"_BUILD_DLL"
 		}
 
 		postbuildcommands {
@@ -43,11 +43,15 @@ project "GameEngine"
 		}
 
 	filter "configurations:Debug"
-		defines "GE_DEBUG"
+		defines "_DEBUG"
 		symbols "On"
 
 	filter "configurations:Release"
-		defines "GE_RELEASE"
+		defines "_RELEASE"
+		optimize "On"
+
+	filter "configurations:Dist"
+		defines "_DIST"
 		optimize "On"
 
 project "SandBox"
@@ -79,13 +83,17 @@ project "SandBox"
 		systemversion "latest"
 
 		defines {
-			"GE_PLATFORM_WINDOWS"
+			"_PLATFORM_WINDOWS"
 		}
 
 	filter "configurations:Debug"
-		defines "GE_DEBUG"
+		defines "_DEBUG"
 		symbols "On"
 
 	filter "configurations:Release"
-		defines "GE_RELEASE"
+		defines "_RELEASE"
+		optimize "On"
+
+	filter "configurations:Dist"
+		defines "_DIST"
 		optimize "On"
