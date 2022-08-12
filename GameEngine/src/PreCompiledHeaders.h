@@ -19,3 +19,6 @@
 #ifdef _PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif // _PLATFORM_WINDOWS
+
+#ifdef _PLATFORM_LINUX
+#endif // _PLATFORM_LINUX

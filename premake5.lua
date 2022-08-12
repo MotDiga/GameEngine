@@ -1,6 +1,6 @@
 workspace "GameEngine"
+	architecture "x86_64"
 	startproject "SandBox"
-	architecture "x64"
 	configurations {
 		"Debug",
 		"Release",
@@ -45,6 +45,19 @@ project "GameEngine"
 		    ("{COPY} \"%{cfg.buildtarget.relpath}\" \"../bin/" .. outputdir .. "/SandBox\"")
 		}
 
+	filter "system:linux"
+		cppdialect "C++20"
+		staticruntime "On"
+		systemversion "latest"
+
+		defines {
+			"_PLATFORM_LINUX",
+			"_BUILD_DLL"
+		}
+
+		postbuildcommands {
+		    ("{COPY} \"%{cfg.buildtarget.relpath}\" \"../bin/" .. outputdir .. "/SandBox\"")
+		}
 	filter "configurations:Debug"
 		defines "_DEBUG"
 		symbols "On"
@@ -87,6 +100,14 @@ project "SandBox"
 
 		defines {
 			"_PLATFORM_WINDOWS"
+		}
+	filter "system:linux"
+		cppdialect "C++20"
+		staticruntime "On"
+		systemversion "latest"
+
+		defines {
+			"_PLATFORM_LINUX"
 		}
 
 	filter "configurations:Debug"
